@@ -1,5 +1,7 @@
 'use strict';
 
+// http://www.codewars.com/kata/magic-the-gathering-number-1-creatures
+
 var survivors = { playerOne: [], playerTwo: [] };
 
 function battle(player1, player2) {
@@ -54,11 +56,7 @@ function clash(player, opponent) {
 };
 
 function isSoldierPresent(position) {
-  if (Array.isArray(position)) {
-    return true;
-  }
-
-  return false;
+  Array.isArray(position) ? true : false;
 }
 
 function clearOutTheDead(army) {
